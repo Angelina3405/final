@@ -1,0 +1,108 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0b1b33;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: rgba(10, 25, 47, 0.9);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-title {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+/* Стили для формы */
+#contactForm {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#contactForm input, 
+#contactForm textarea {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+}
+
+#contactForm input::placeholder, 
+#contactForm textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#contactForm button {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}

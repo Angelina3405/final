@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog | InnovTech</title>
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">InnovTech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="startups.html">Startups</a></li>
+                    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  
+     <!-- Section with Background Video -->
+     <section class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="/media/background.mp4" type="video/mp4">
+           
+            <img src="/media/fallback.jpg" alt="Background image">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Latest Innovations & Tech News</h1>
+            <p class="hero-subtitle">Stay updated with the latest trends in science and technology.</p>
+            
+        </div>
+    </section>
+
+    <!-- Search & Filter Section -->
+    <div class="container">
+        <div class="filter-bar">
+            <input type="text" id="searchInput" placeholder="Search articles...">
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="AI">Artificial Intelligence</option>
+                <option value="Biotech">Biotechnology</option>
+                <option value="Space">Space Exploration</option>
+            </select>
+        </div>
+
+        <!-- Blog Posts -->
+        <div id="blogPosts" class="row">
+            <!-- Статьи загружаются динамически -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 InnovTech. All Rights Reserved.</p>
+    </footer>
+
+    <script src="/js/blog.js"></script>
+</body>
+</html>

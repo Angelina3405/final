@@ -1,0 +1,109 @@
+/* General styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0b1b33;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: rgba(10, 25, 47, 0.9);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-title {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.btn-primary {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Subscription Section */
+.subscribe {
+    text-align: center;
+    padding: 30px;
+    background-color: #152b51;
+}
+
+.subscribe input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.subscribe button {
+    padding: 10px 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0A192F;
+}
